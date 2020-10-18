@@ -7,31 +7,43 @@
 	<meta charset="utf-8">
 	<title>CPT422 Patrick Davis Multimedia</title>
 	<style>
-	body{
-		background-color: #faf2e4;
-		margin: 0 10%;
+	@import url("styles/main-styles.css");
+	li {
+		color: black;
 		font-family: sans-serif;
-		}
-	h1 {
-		text-align: center;
-		font-family: serif;
 		font-weight: normal;
-		text-transform: uppercase;
-		border-bottom: 1px solid #57b1dc
-		margin-top: 30px;
-		}
-	h2 {
-		color: #d1633c;
-		font-size: 1em;
-		}
+	}
+	.img-container {
+		text-align: center;
+		width: 78vw;
+	}
+	
+	.img-container img {
+		max-width: 100%;
+		height: auto;
+	}
+	.vid-container {
+		text-align: center;
+		width: 78vw;
+	}
+	.vid-container video {
+		max-width: 100%
+		height: auto;
+	}
 	</style>
 	
 </head>
 <body>
 	<header>
-	<a href="index.html">Home</a>
+		<nav>
+			<ul class="topNav">
+				<li class="topNav"><a href="index.html"> Home</a></li>
+				<li class="topNav"><a href="aboutMe.html"> About Me</a></li>
+				<li class="topNav active"><a href=""> How to flatten rough lumber</a></li>
+			</ul>
+		<nav>
 	</header>
-	
+<main>	
 	<h1>How to flatten a board with just one plane</h1>
 	
 	<h2>Tools required:<h2>
@@ -42,13 +54,15 @@
 		<li>Straight edge</li>
 		<li>Pencil</li>
 	</ul>
+	
 	<h2>Step 1: Set your plane</h2>
 	<p>If you've never used a hand plane before, I'd recommend getting familiar with the basics by watching the video below:</p>
-	<video width="320" height="240" controls>
-		<source src="movie.mp4" type="video/mp4">
-		<source src="movie.ogg" type="video/ogg">
-		"Insert video here"
-	</video>
+	<div class="vid-container">
+		<iframe width="560" height="315" 
+			src="https://www.youtube.com/embed/-CLk7vbwPgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+			encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+	</div>
 	<p>To flatten rough stock, you'll want to start by taking a relatively thick shaving with your plane, otherwise this is going to take a while.
 	You'll do this by backing your chip breaker a bit from the cutting edge of your plane iron. You don't want to go too far or you won't be able to push
 	through the board. The distance from the cutting edge to your chipbreaker will determine the maximum thickness shaving you'll get in a pass. Take as thick
@@ -56,32 +70,40 @@
 	if you want to do this with just one plane, you'll have to make do.</p>
 	
 	<h2>Step 2: Assess the board</h2>
-	<img src="images/Bow-Cup-Twist.jpg" alt="Bow/Cup/Twist illustration">
+	<div class="img-container">
+		<img src="images/Bow-Cup-Twist.jpg" alt="Bow/Cup/Twist illustration">
+	</div>
 	<p>It's important to get an idea of how far you are from flat and in what way. Bowed and cupped are the most straight forward. Place a straight edge 
 	across your stock, and look for light below it. Those are your low spots. Mark your high spots with pencil; that's where you'll be removing material.</p>
 	<p>Twisting is a little trickier, and this is where you're winding sticks come in. The simplest way to see if your stock is twisted is by pressing down
 	on opposite corners. If it rocks or wobbles, its twisted. The goal is still the same though, plane off the high spots until you're flat. To do this, put
 	your winding sticks on the ends of your board and look down them.</p>
-	<img src="images/winding_sticks.jpg" alt="Sighting down winding sticks">
+	<div class="img-container">
+		<img src="images/winding_sticks.jpg" alt="Sighting down winding sticks">
+	</div>
 	<p>The winding sticks exagerrate the twist to make it easier to see. Sight along the top and mark the high corners with pencil.</p>
-
-	<h2>Step 3: Take a few passes<h2>
-	<img src="images/Plane_side_reference.jpg" alt="Checking for flat with plane">
+	
+	<h2>Step 3: Take a few passes</h2>
+	<div class="img-container">
+		<img src="images/Plane_side_reference.jpg" alt="Checking for flat with plane" align=center>
+	</div>
 	<p>Take a few passes diagonally across the grain of your wood. You'll notice that you won't be taking a continuous shaving as your plane will only take off the 
 	high spots. Focus on those high corners if you're board is twisted first, but don't focus on any one spot for more than one pass; work your way all the way across
 	your board. Check back with your winding sticks occasionally to measure your progress. As you take more passes, getting closer to a full length shaving,
 	check your progress periodically. Use your straight edge or the side of your plane and look for light underneath. You won't see any when you're dead flat.</p>
 	
-	<h2>Step 4: Finish up<h2>
-	<img src="images/smoothing_plane_cutting.jpg" alt="Smoothing plane cutting">
+	<h2>Step 4: Finish up</h2>
+	<div class="img-container">
+		<img src="images/smoothing_plane_cutting.jpg" alt="Smoothing plane cutting">
+	</div>
 	<p>Once you're pretty close, set your plane up for a thinner shaving by moving that chipbreaker in close to the edge of your plane iron. Plane with the grain,
 	taking overlapping passes with the grain of the wood. You should already be pretty close to flat, you're goal here is to remove any tool marks left from
 	when you were hogging material off before. Don't take too many passes in one spot or on on side or your board won't be flat anymore. Make sure to remove
 	material evenly from the whole surface.</p>
 	
-	<h2>Step 5: Congrats you're done!<h2>
+	<h2>Step 5: Congrats you're done!</h2>
 	<p>Now that you've got one flat face, you can use it as a reference for squaring up your board.</p> 
-	
+</main>	
 	<footer>
 		<a href="index.html"> Home </a>
 	</footer>
