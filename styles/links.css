@@ -1,0 +1,26 @@
+a.inlineLink {
+	color: blue;
+	text-decoration: none;
+}
+a.inlineLink:visited {
+	color:blue;
+}
+a.inlineLink:hover {
+	color: goldenrod;
+}
+	
+.link-container {
+	text-align: center;
+}
+.link-container a{
+	color: darkcyan;
+	text-decoration: none;
+}
+.link-container a:hover{
+	color: mistyrose;
+	background-color: goldenrod;
+}
+
+h2 {
+	text-align: center;
+}
